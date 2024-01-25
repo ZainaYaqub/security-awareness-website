@@ -2,12 +2,14 @@
 body, h1, h2, p, ul {
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Apply box-sizing to include padding and border in element's total width and height */
 } 
 
 body {
     font-family: 'Arial', sans-serif;
     background-color: #f5f5f5;
     line-height: 1.6;
+    color: #333; /* Set default text color */
 }
 
 /* Header styles */
@@ -49,4 +51,16 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+/* Responsive Design - Adjust styles for smaller screens */
+@media only screen and (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+
+    footer {
+        position: relative;
+        /* Add any additional responsive styles as needed */
+    }
 }
